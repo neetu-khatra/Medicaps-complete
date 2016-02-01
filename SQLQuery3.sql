@@ -1,0 +1,1 @@
+﻿insert into Diseases values('Asthma','avoid dirt,pollens,animal fur','abc','xyz','irritation','wheezing','cough','chest-pain','weakness');

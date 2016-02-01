@@ -1,0 +1,1 @@
+﻿insert into Login values('aaa','aaa@yahoo.in','aaaP');

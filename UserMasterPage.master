@@ -1,0 +1,244 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="UserMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:white">
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+         <asp:Image ID="Image1" runat="server" Width="100%" Height="212px" ImageUrl="~/images/welcome.jpg" />
+        
+        <table style="width:100%">
+            <tr>
+                <td>                
+                    <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" RenderingMode="Table" Width="100%" StaticEnableDefaultPopOutImage="False">
+                        <DynamicHoverStyle BackColor="#CC0099" />
+                        <DynamicMenuItemStyle ForeColor="#CCFF66" Width="210px" BackColor="Purple" />
+                        <DynamicMenuStyle BackColor="Purple" Height="80px" />
+                        <Items>
+                            <asp:MenuItem Text="About Us"  Value="About Us">
+                                <asp:MenuItem Text="Contact Us" Value="Contact Us" NavigateUrl="~/ContactUs.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Career" Value="Career" NavigateUrl="~/Career.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Health Care" Value="Health Care">
+                                <asp:MenuItem Text="Nutrition" Value="Nutrition" NavigateUrl="~/NutritionPage.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Medication" Value="Medication" NavigateUrl="~/Medication.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Fitness" Value="Fitness" NavigateUrl="~/Fitness.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Health Camps" Value="Health Camps" NavigateUrl="~/HealthCamps.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Patient Care" Value="Patient Care">
+                                <asp:MenuItem Text="Login" Value="Login" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Register" Value="Register" NavigateUrl="~/RegistrationPage.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Facilities" Value="Facilities" NavigateUrl="~/facilities.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Overview" Value="Overview" NavigateUrl="~/Overview.aspx"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#CC0099" />
+                        <StaticMenuItemStyle Font-Bold="True" Font-Size="Larger" Font-Underline="True" ForeColor="#CCFF66" Width="210px" BackColor="Purple" />
+                        <StaticMenuStyle BackColor="Purple" />
+                    </asp:Menu>
+                </td>
+            </tr>
+        </table><br /><br /><br /><br />
+        
+        <table>
+            <tr>
+                <td>
+                    <asp:Panel ID="Panel1" runat="server">
+                        <asp:CheckBoxList ID="CheckBoxList1" runat="server" Height="2000px" RepeatColumns="5" Width="1200px" BorderColor="#99FF33" BorderStyle="Ridge" Font-Bold="True" ForeColor="#FF33CC">
+                            <asp:ListItem>Abdomen-pain</asp:ListItem>
+                            <asp:ListItem>Abnormalities</asp:ListItem>
+                            <asp:ListItem>Allergy</asp:ListItem>
+                            <asp:ListItem>Anxious</asp:ListItem>
+                            <asp:ListItem>Anemia</asp:ListItem>
+                            <asp:ListItem>Anger</asp:ListItem>
+                            <asp:ListItem>Appetite-loss</asp:ListItem>
+                            <asp:ListItem>Back-pain</asp:ListItem>
+                            <asp:ListItem>Blemishes</asp:ListItem>
+                            <asp:ListItem>Bleeding</asp:ListItem>
+                            <asp:ListItem>Breathlessness</asp:ListItem>
+                            <asp:ListItem>Brain-damage</asp:ListItem>
+                            <asp:ListItem>Brown/red-urine</asp:ListItem>
+                            <asp:ListItem>BP-high</asp:ListItem>
+                            <asp:ListItem>BP-low</asp:ListItem>
+                            <asp:ListItem>Burning</asp:ListItem>
+                            <asp:ListItem>Chest-pain</asp:ListItem>
+                            <asp:ListItem>Chocking</asp:ListItem>
+                            <asp:ListItem>Circulatory-system-failure</asp:ListItem>
+                            <asp:ListItem>Clumsiness</asp:ListItem>
+                            <asp:ListItem>Cough</asp:ListItem>
+                            <asp:ListItem>Constipation</asp:ListItem>
+                            <asp:ListItem>Cramps</asp:ListItem>
+                            <asp:ListItem>Dehydration</asp:ListItem>
+                            <asp:ListItem>Delayed-growth</asp:ListItem>
+                            <asp:ListItem>Dementia</asp:ListItem>
+                            <asp:ListItem>Discomfort</asp:ListItem>
+                            <asp:ListItem>Diarrhea</asp:ListItem>
+                            <asp:ListItem>Dizziness</asp:ListItem>
+                            <asp:ListItem>Disorientation</asp:ListItem>
+                            <asp:ListItem>Dry-mouth</asp:ListItem>
+                            <asp:ListItem>Dry-nose</asp:ListItem>
+                            <asp:ListItem>Dryness</asp:ListItem>
+                            <asp:ListItem>Dyspepsia</asp:ListItem>
+                            <asp:ListItem>Ear Pain</asp:ListItem>
+                            <asp:ListItem>Eye Pain</asp:ListItem>
+                            <asp:ListItem>Energy-level-low</asp:ListItem>
+                            <asp:ListItem>Energy-level-high</asp:ListItem>
+                            <asp:ListItem>Fatigue</asp:ListItem>
+                            <asp:ListItem>Fever-high</asp:ListItem>
+                            <asp:ListItem>Fever-low</asp:ListItem>
+                            <asp:ListItem>Fear</asp:ListItem>
+                            <asp:ListItem>Fainting</asp:ListItem>
+                            <asp:ListItem>Gum-bleeding</asp:ListItem>
+                            <asp:ListItem>Gall-stone</asp:ListItem>
+                            <asp:ListItem>Gratification</asp:ListItem>
+                            <asp:ListItem>Hoarseness</asp:ListItem>
+                            <asp:ListItem>Headache</asp:ListItem>
+                            <asp:ListItem>Hearing-loss</asp:ListItem>
+                            <asp:ListItem>Heart-damage</asp:ListItem>
+                            <asp:ListItem>Hallucination</asp:ListItem>
+                            <asp:ListItem>Hypervigilant</asp:ListItem>
+                            <asp:ListItem>Hives</asp:ListItem>
+                            <asp:ListItem>Impulsiveness</asp:ListItem>
+                            <asp:ListItem>Inability-to-communicate</asp:ListItem>
+                            <asp:ListItem>Inability-to-walk</asp:ListItem>
+                            <asp:ListItem>Inability-recognize-people</asp:ListItem>
+                            <asp:ListItem>Insomnia</asp:ListItem>
+                            <asp:ListItem>Infection</asp:ListItem>
+                            <asp:ListItem>Infertility</asp:ListItem>
+                            <asp:ListItem>Itching</asp:ListItem>
+                            <asp:ListItem Value="Itchy-skin">Itchy-skin</asp:ListItem>
+                            <asp:ListItem>Jaundice</asp:ListItem>
+                            <asp:ListItem>Joint-pain</asp:ListItem>
+                            <asp:ListItem>Knee-pain</asp:ListItem>
+                            <asp:ListItem>Knee-swelling</asp:ListItem>
+                            <asp:ListItem>Knee-unstable</asp:ListItem>
+                            <asp:ListItem>Kidney-failure</asp:ListItem>
+                            <asp:ListItem>Lethargy</asp:ListItem>
+                            <asp:ListItem>Lead-line-on-gums</asp:ListItem>
+                            <asp:ListItem>Leg-ulcers</asp:ListItem>
+                            <asp:ListItem>Limbs-pain</asp:ListItem>
+                            <asp:ListItem>Lost-sense-of-touch</asp:ListItem>
+                            <asp:ListItem>Loss-of-energy</asp:ListItem>
+                            <asp:ListItem>Loss-of-control</asp:ListItem>
+                            <asp:ListItem>Lumps</asp:ListItem>
+                            <asp:ListItem>Meningitis</asp:ListItem>
+                            <asp:ListItem>Menstrual-cramps</asp:ListItem>
+                            <asp:ListItem>Mood-swings</asp:ListItem>
+                            <asp:ListItem Value="Muscle-pain">Muscle-pain</asp:ListItem>
+                            <asp:ListItem>Muscle-cramps</asp:ListItem>
+                            <asp:ListItem>Nausea</asp:ListItem>
+                            <asp:ListItem>Nose-bleeding</asp:ListItem>
+                            <asp:ListItem Value="Numbness">Numbness</asp:ListItem>
+                            <asp:ListItem>Nervous-system-damage</asp:ListItem>
+                            <asp:ListItem>Oily-skin</asp:ListItem>
+                            <asp:ListItem Value="Outbreak-of-blisters">Outbreak-of-blisters</asp:ListItem>
+                            <asp:ListItem>Palpitations</asp:ListItem>
+                            <asp:ListItem>Pelvic-pain</asp:ListItem>
+                            <asp:ListItem>Pica</asp:ListItem>
+                            <asp:ListItem>Pimples</asp:ListItem>
+                            <asp:ListItem>Pale-skin</asp:ListItem>
+                            <asp:ListItem>Redness</asp:ListItem>
+                            <asp:ListItem>Restless</asp:ListItem>
+                            <asp:ListItem>Rectal-pain</asp:ListItem>
+                            <asp:ListItem>Scaly-skin</asp:ListItem>
+                            <asp:ListItem>Scars</asp:ListItem>
+                            <asp:ListItem>Second-sight</asp:ListItem>
+                            <asp:ListItem>Seizures</asp:ListItem>
+                            <asp:ListItem>Sensitivity-to-light</asp:ListItem>
+                            <asp:ListItem>Sleeplessness</asp:ListItem>
+                            <asp:ListItem>Short-term-memory-loss</asp:ListItem>
+                            <asp:ListItem>Skin-rashes</asp:ListItem>
+                            <asp:ListItem>Stomach-pain</asp:ListItem>
+                            <asp:ListItem>Snoring</asp:ListItem>
+                            <asp:ListItem>Stiffness-in-body</asp:ListItem>
+                            <asp:ListItem>Swelling</asp:ListItem>
+                            <asp:ListItem>Ulceration</asp:ListItem>
+                            <asp:ListItem>Unusual-discharge</asp:ListItem>
+                            <asp:ListItem>Unusual-nails</asp:ListItem>
+                            <asp:ListItem>Unusual-skin</asp:ListItem>
+                            <asp:ListItem>Vomiting</asp:ListItem>
+                            <asp:ListItem>Violent</asp:ListItem>
+                            <asp:ListItem>Vision-blurred</asp:ListItem>
+                            <asp:ListItem>Vision-cloudy</asp:ListItem>
+                            <asp:ListItem>Vision-double</asp:ListItem>
+                            <asp:ListItem>Vision-foggy</asp:ListItem>
+                            <asp:ListItem>Vision-low</asp:ListItem>
+                            <asp:ListItem>Weight-loss</asp:ListItem>
+                            <asp:ListItem>Weakness</asp:ListItem>
+                            <asp:ListItem>Wheezing</asp:ListItem>
+                            <asp:ListItem>Wet-burps</asp:ListItem>
+                        </asp:CheckBoxList>
+                    </asp:Panel>
+                </td>
+                <td>
+                    <asp:Label ID="Label1" runat="server" Text="Label" Height="70px" Width="311px" style="margin-left: 135px" BackColor="#99FF33" Font-Bold="True" Font-Size="Large"></asp:Label>
+                    <asp:Button ID="BtnLogout" runat="server" Text="Logout" Height="92px" style="margin-left: 135px; margin-top: 0px;"  BackColor="#CCFF33" Font-Bold="True" Width="311px" OnClick="BtnLogout_Click" />
+                    <asp:Image ID="Image2" runat="server" Height="1322px" ImageUrl="~/images/nutrition19_248518079374.png" Width="311px" style=" margin-left: 135px; margin-top: 0px;" />
+                    <asp:Calendar ID="Calendar1" runat="server" ForeColor="Yellow" Height="400px" style="margin-left: 135px; margin-top: 0px" Width="311px">
+                        <DayHeaderStyle BackColor="#FFCC00" ForeColor="White" />
+                        <DayStyle BackColor="Black" />
+                        <SelectedDayStyle BackColor="#FFCC00" />
+                        <TitleStyle BackColor="Black" Font-Bold="True" ForeColor="#FF3300" />
+                        <TodayDayStyle BackColor="#FF3300" />
+                     </asp:Calendar>
+                    <asp:Button ID="btnReport" runat="server" Text="Generate Report" BackColor="#CCFF33" Font-Bold="True" Height="79px" style="margin-left : 135px; margin-top:0px" Width="311px" OnClick="btnReport_Click" />
+                </td>
+            </tr>
+        </table>
+        <br /><br />
+         <asp:Panel ID="panel2" runat="server" >
+         <table>
+            <tr>
+               <td>
+                   <asp:Panel runat="server" Height="200px" Width="600px" BackColor="#339966" Font-Bold="True" Font-Size="XX-Large" ForeColor="#660066" >
+                    <asp:Label ID="Label2" runat="server" Text="Welcome "></asp:Label><asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                    <br /><br /></asp:Panel></td></tr>
+            <tr><td>
+                <asp:Panel runat="server" Height="150px" Width="600px" BackColor="#00BB80" Font-Size="Large" >
+                    <asp:Label ID="Label4" runat="server" Text="The Disease Name is " Font-Bold="True"></asp:Label><br /><br />
+                    <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
+                    <br /></asp:Panel></td></tr>
+            <tr><td>
+                <asp:Panel runat="server" Height="150px" Width="600px" BackColor="#44DD99" Font-Size="Large" >
+                    <asp:Label ID="Label6" runat="server" Text="The Precautions are " Font-Bold="True"></asp:Label><br /><br />
+                    <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
+                    <br /></asp:Panel>
+                </td></tr>
+            <tr><td>
+                <asp:Panel runat="server" Height="150px" Width="600px" BackColor="#66FF99" Font-Size="Large" >
+                    <asp:Label ID="Label8" runat="server" Text="The Cure is" Font-Bold="True"></asp:Label><br /><br />
+                    <asp:Label ID="Label9" runat="server" Text="Label"></asp:Label>
+                    <br /></asp:Panel>
+                </td></tr>
+            <tr><td>
+                <asp:Panel runat="server" Height="150px" Width="600px" BackColor="#99FF99" Font-Size="Large" >
+                    <asp:Label ID="Label10" runat="server" Text="You should go for the following tests to confirm the same" Font-Bold="True"></asp:Label><br />
+                  <br />  <asp:Label ID="Label11" runat="server" Text="Label"></asp:Label>
+                    <br />
+                    </asp:Panel>
+                </td></tr>
+                            <tr>
+                                <td>
+                                    <asp:Panel runat="server" Height="150px" Width="600px" >
+                                        <asp:Image ID="Image3" runat="server" Height="140px" Width="200px" />
+                                        <asp:Image ID="Image4" runat="server" Height="140px" Width="200px" />
+                                        <asp:Image ID="Image5" runat="server" Height="140px" Width="200px" />
+                                    </asp:Panel>
+                                </td>
+                            </tr>
+            </table>
+        </asp:Panel>
+        <span style="margin-left:700px; color:green"  >2015 @ All Rights Reserved. </span>
+    </form>
+</body>
+</html>

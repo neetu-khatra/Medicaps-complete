@@ -1,0 +1,1 @@
+﻿insert into Diseases values('Dehydration','weakness,headache','avoid sun','drink water,WHO ORS','');

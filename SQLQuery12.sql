@@ -1,0 +1,3 @@
+﻿insert into DisTable(name,precautions,cure,[test to confirm],s1,s2,s3,s4,s5,s6 ) values('Appendictis','efdef','udedy','jwey3w','Constipation','Nausea','Appetite-loss','Fever-high','Vomiting','Abdomen-pain')
+insert into DisTable(name,precautions,cure,[test to confirm],s1,s2,s3,s4,s5,s6 ) values('Appendictis','efdef','udedy','jwey3w','Abdomen-pain','Vomiting','Fever-high','Appetite-loss','Nausea','Constipation')
+insert into DisTable(name,precautions,cure,[test to confirm],s1,s2,s3,s4,s5,s6 ) values(

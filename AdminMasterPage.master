@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:whitesmoke">
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+        <asp:Label ID="Label1" runat="server" Text="Hello," ForeColor="Yellow" Font-Size="X-Large" Font-Bold="True"></asp:Label><br />
+        <br />
+
+        <asp:Label ID="Label2" runat="server" Text="Welcome back Admin.." Font-Bold="True" Font-Size="X-Large" ForeColor="Red"></asp:Label>
+        <br /><br />
+        <asp:Label ID="Label3" runat="server" Text="Please Login first.." Font-Bold="True" Font-Size="X-Large" ForeColor="Red"></asp:Label><br /><br />
+        <asp:Panel ID="Panel1" runat="server">
+            <asp:Label ID="Label4" runat="server" Text="name" Font-Bold="True" Font-Size="Large" ForeColor="#666666"></asp:Label>
+            <asp:TextBox ID="TextBox1" runat="server" style="margin-left: 40px"></asp:TextBox><br />
+            <asp:Label ID="Label5" runat="server" Text="password" Font-Bold="True" Font-Size="Large" ForeColor="#666666"></asp:Label>
+            <asp:TextBox ID="TextBox2" runat="server" style="margin-left: 11px"></asp:TextBox><br />
+            <asp:Button ID="Button3" runat="server" Text="Login" OnClick="Button3_Click" style="margin-left: 94px" /><br /><br />
+        </asp:Panel>
+
+        <asp:Button ID="Button1" runat="server" Text="insert diseases" BackColor="#333333" Font-Bold="True" Font-Size="X-Large" ForeColor="Yellow" Height="200px" Width="350px" OnClick="Button1_Click" />
+    
+    <asp:Button ID="Button2" runat="server" Text="update diseases" BackColor="#333333" Font-Bold="True" Font-Size="X-Large" ForeColor="Yellow" Height="200px" Width="350px" OnClick="Button2_Click" />
+    <br />
+    <asp:Button ID="Button4" runat="server" Text="view registered users" BackColor="#333333" Font-Bold="True" Font-Size="X-Large" ForeColor="Yellow" Height="200px" Width="350px" OnClick="Button4_Click" />
+    <asp:Button ID="Button5" runat="server" Text="show all diseases" BackColor="#333333" Font-Bold="True" Font-Size="X-Large" ForeColor="Yellow" Height="200px" Width="350px" OnClick="Button5_Click" />
+    </form>
+</body>
+</html>
